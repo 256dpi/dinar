@@ -1,4 +1,5 @@
 require 'highline/import'
+require 'hashdiff'
 
 class Hash
   def dig(array)
@@ -68,7 +69,7 @@ module Dinar
               when '+'
                 if master_hash.dig([@source_locale,*elements,last]).is_a? Hash
                   puts "added hash for key '#{key}'"
-                  target_hash[target_locale].dig(elements)[last] = {}
+                  target_hash[@target_locale].dig(elements)[last] = {}
                   next
                 end
                 begin
