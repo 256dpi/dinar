@@ -5,6 +5,7 @@ module Dinar
     end
     rake_tasks do
       load 'tasks/dinar/update.rake'
+      load 'tasks/dinar/translate.rake'
     end
   end
 end
