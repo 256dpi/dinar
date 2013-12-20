@@ -1,29 +1,23 @@
 # Dinar
 
-TODO: Write a gem description
+A simple rails locale managment system.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Currently the gem is only available over github:
 
-    gem 'dinar'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install dinar
+```ruby
+gem 'dinar', github: '256dpi/dinar'
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+### Setup
 
-## Contributing
+Use the generator to setup dinar:
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+    $ rails g dinar:install en de es it
+
+The first language key is the source language (master), all others are target languages to translate to.
+
+A `config/dinar.yml` gets created to transparently hold the configuration.
