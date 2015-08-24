@@ -1,5 +1,7 @@
 # Dinar
 
+_This project is not maintained anymore._
+
 A simple rails locale managment system.
 
 ## Installation
